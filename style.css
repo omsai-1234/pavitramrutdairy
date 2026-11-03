@@ -1,0 +1,97 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #7c3f3f;
+}
+/* Header */
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+header h1 {
+    margin:0;
+    font-size: 36px;
+}
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+nav a {
+    color: white;
+    text-decoration:none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    width: 80%;
+    margin: 30px auto ;
+}
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+section h2 {
+    color: #4caf50;
+}
+/* Products */
+#products {
+    display:grid ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+#products > h2 {
+    grid-column: 1 / -1;
+}
+article {
+    padding: 20px;
+    background-color: #f1f8e9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+article h3 {
+    color: #388e3c;
+}
+
+/* Aside */
+aside {
+    background-color: #fff3cd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #ffc107;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}/* Mobile */
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    #products {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+}
+
+
